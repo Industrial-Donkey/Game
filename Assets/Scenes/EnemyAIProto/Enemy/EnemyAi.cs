@@ -10,7 +10,7 @@ enum EnemyState {
 
 public class EnemyAi : MonoBehaviour
 {
-
+    public Rigidbody rigidBody;
     private EnemyState currentState;
 
     void Start() {
@@ -22,13 +22,22 @@ public class EnemyAi : MonoBehaviour
     {
         switch (currentState) {
             case EnemyState.HOSTILE:
+                // Lock on to player transform an attack.
+
                 break;
 
             case EnemyState.SEARCHING:
+                // Distractions. Initiate search pattern.
+
                 break;
 
             case EnemyState.PEACEFUL:
             default:
+                // Just move normally. Either randomly or on a path of some kind.
+                float direction = (Mathf.PerlinNoise(Time.realtimeSinceStartup / 10, Time.realtimeSinceStartup / 10) * 2) - 1;
+                Debug.Log(direction);
+                rigidBody.AddForce((Vector3.left * 10) * direction);
+
                 break;
         }
     }
