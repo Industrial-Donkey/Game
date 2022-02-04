@@ -7,9 +7,17 @@ public class AFastTravel : MonoBehaviour
 {
     // Triggers upon entering the object
     // Loads a different scene
+
+    public Collider collider;
+    public int sceneId;
+    
+    
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(0);
+        if (other == collider)
+        {
+            SceneManager.LoadScene(sceneId);
+        }
     }
 }
 

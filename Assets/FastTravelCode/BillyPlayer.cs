@@ -38,7 +38,7 @@ public class BillyPlayer : MonoBehaviour
         }
         if (jumpKeyWasPressed)
         {
-            rigidbodyComponent.AddForce(Vector3.up * 6, ForceMode.VelocityChange);
+            rigidbodyComponent.AddForce(Vector3.up * 7, ForceMode.VelocityChange);
             jumpKeyWasPressed = false;
         }
     }
