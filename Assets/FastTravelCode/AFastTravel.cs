@@ -12,9 +12,9 @@ public class AFastTravel : MonoBehaviour
     public int sceneId;
     
     
-    void OnTriggerEnter(Collider other)
+    void Update()
     {
-        if (other == collider)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             SceneManager.LoadScene(sceneId);
         }
