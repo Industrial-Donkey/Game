@@ -7,6 +7,7 @@ public class StandardMovementHandler : MonoBehaviour
 
     private CharacterController characterController;
     private int direction = 0;
+    private int jump = 0;
     
     void Start() {
         characterController = this.GetComponent<CharacterController>();
@@ -23,6 +24,12 @@ public class StandardMovementHandler : MonoBehaviour
             direction = 0;
         }
 
-        this.characterController.SimpleMove(new Vector3(2 * direction, 0, 0));
+        if (Input.GetKeyDown(KeyCode.W)) {
+            jump = 1;
+        } else {
+            jump = 0;
+        }
+
+        this.characterController.SimpleMove(new Vector3(2 * direction, 10 * jump, 0));
     }
 }
