@@ -11,10 +11,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FastTravels/AFastTravel.unity
     guid: 5939144f8fb581948920c6934407c6ff
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FastTravels/BFastTravel.unity
     guid: ffc8bef320d2adc4abed26b26b5cf36f
+  - enabled: 1
+    path: Assets/Scenes/JJScenes/JJMenu.unity
+    guid: eb7a8c1b0d47f68469be72704c10c970
+  - enabled: 1
+    path: Assets/Scenes/JJScenes/JJ Game.unity
+    guid: cc2dcbd771b4d394ab3e2ddf48735caa
   m_configObjects: {}
