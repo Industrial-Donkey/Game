@@ -116,7 +116,7 @@ public class BillyPlayer : MonoBehaviour
         isDead = false;
 
         ///selects menu as next scene
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
 
         //This code reloads the CURRENT scene. aviods menu
         ///Scene scene = SceneManager.GetActiveScene();

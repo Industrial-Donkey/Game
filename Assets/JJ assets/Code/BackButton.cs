@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayButton : MonoBehaviour
+public class BackButton : MonoBehaviour
 {
-    public void PlayGame()
-    {
-        SceneManager.LoadScene(4);
+    public void GoBack() {
+        SceneManager.LoadScene(1);
     }
 }
