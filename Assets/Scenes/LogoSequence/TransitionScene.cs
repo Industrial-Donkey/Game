@@ -19,9 +19,9 @@ public class TransitionScene : MonoBehaviour
     {
         if ((videoPlayer.length - 1) <= videoPlayer.time) {
             // Transition to intro scene
-            Debug.Log("Load Scene 2");
+            Debug.Log("Load Scene 1");
             
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(1);
         }
     }
 }
