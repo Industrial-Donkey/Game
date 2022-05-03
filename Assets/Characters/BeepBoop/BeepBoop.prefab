@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5753914446790791287}
   - component: {fileID: 2240437118669947156}
   - component: {fileID: 4402868447645574447}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BeepBoop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2278807485052746121}
   - component: {fileID: 4919575026177087732}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BeepBoopSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
