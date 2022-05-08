@@ -31,5 +31,6 @@ public class StandardMovementHandler : MonoBehaviour
         }
 
         this.characterController.SimpleMove(new Vector3(2 * direction, 10 * jump, 0));
+        //this.characterController.Move(new Vector3(2 * direction, 10 * jump, 0));
     }
 }
